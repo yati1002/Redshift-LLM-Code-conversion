@@ -1,0 +1,9 @@
+# Streamlit app configuration for UC Volume File Upload
+name: uc-volume-file-upload
+description: Streamlit app to upload files to Unity Catalog Volume
+
+command: ["streamlit", "run", "app.py"]
+
+env:
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    valueFrom: "sql_warehouse"
